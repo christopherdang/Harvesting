@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}Identify Color{% endblock %}
+{% block content %}
+<html>
+        <head>
+            <style>
+            .bg {
+                background-image:url({{url_for('static', filename='bg5.jpg')}});
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .form-check-label {
+                padding-right: 5%;
+            }
+            </style>
+        </head>
+
+<div class="text-center">
+    <body>
+    <div class="bg">
+        <form action="/idenColorGame#">
+
+            <h1>Select Colors:</h1>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="checkRed">
+              <label class="form-check-label" for="checkRed">
+                Red
+              </label>
+
+                <input class="form-check-input" type="checkbox" value="" id="checkOrange">
+                <label class="form-check-label" for="checkOrange">
+                Orange
+              </label>
+
+                <input class="form-check-input" type="checkbox" value="" id="checkYellow">
+                <label class="form-check-label" for="checkYellow">
+                Yellow
+              </label>
+
+                <input class="form-check-input" type="checkbox" value="" id="checkGreen">
+                <label class="form-check-label" for="checkGreen">
+                Green
+              </label>
+
+                <input class="form-check-input" type="checkbox" value="" id="checkBlue">
+                <label class="form-check-label" for="checkBlue">
+                Blue
+              </label>
+
+                <input class="form-check-input" type="checkbox" value="" id="checkPurple">
+                <label class="form-check-label" for="checkPurple">
+                Purple
+              </label>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <h1>Select Display Options:</h1>
+            <input class="form-check-input" type="checkbox" value="" id="check1">
+                <label class="form-check-label" for="check1">
+                1 at a time
+              </label>
+
+            <input class="form-check-input" type="checkbox" value="" id="check2">
+                <label class="form-check-label" for="check2">
+                2 at a time
+              </label>
+
+            <input class="form-check-input" type="checkbox" value="" id="check3">
+                <label class="form-check-label" for="check3">
+                3 at a time
+              </label>
+
+            <input class="form-check-input" type="checkbox" value="" id="check4">
+                <label class="form-check-label" for="check4">
+                4 at a time
+              </label>
+
+            <input class="form-check-input" type="checkbox" value="" id="check5">
+                <label class="form-check-label" for="check5">
+                5 at a time
+              </label>
+
+            <input class="form-check-input" type="checkbox" value="" id="check6">
+                <label class="form-check-label" for="check6">
+                6 at a time
+              </label>
+
+            <br>
+            <br>
+            <br>
+
+            <input type="submit" value="Confirm" />
+
+        </form>
+
+        <br>
+
+    </div>
+    </body>
+</div>
+</html>
+{% endblock %}

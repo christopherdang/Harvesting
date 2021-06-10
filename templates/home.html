@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<html>
+        <head>
+            <style>
+            .bg {
+                background-image:url({{url_for('static', filename='bg5.jpg')}});
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            </style>
+        </head>
+
+<div class="text-center">
+    <body>
+    <div class="bg">
+
+        <h>Identify Games</h>
+        <li class="nav-item active">
+            <a class="nav-link" href="/idenColor#">Identify Color <span class="sr-only"></span></a>
+        </li>
+
+    </div>
+    </body>
+</div>
+</html>
+{% endblock %}

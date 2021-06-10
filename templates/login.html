@@ -1,0 +1,36 @@
+{% block title %}Login Page{% endblock %}
+{% block content %}
+<html>
+        <head>
+            <style>
+            .bg {
+                background-image:url({{url_for('static', filename='bg5.jpg')}});
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            </style>
+        </head>
+
+<div class="text-center">
+    <body>
+    <div class="bg">
+
+        <form action="#" method="post">
+            <p style="margin-top: 30px;"><strong>Company Name:</strong></p>
+            <p><input class="form-control1" type="text" placeholder="Company Name" name="company"/></p>
+
+            <p><strong>Username:</strong></p>
+            <p><input class="form-control2" type="text" placeholder="Username" name="username"/></p>
+
+            <p><strong>Password:</strong></p>
+            <p><input class="form-control3" type="text" placeholder="Password" name="password"/></p>
+
+            <p><input type="submit" value="Login"/></p>
+            <br>
+        </form>
+    </div>
+    </body>
+</div>
+</html>
+{% endblock %}

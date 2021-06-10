@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Identify Color{% endblock %}
+{% block content %}
+<html>
+        <head>
+            <style>
+            .bg {
+                background-image:url({{url_for('static', filename='bg5.jpg')}});
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            </style>
+        </head>
+
+<div class="text-center">
+    <body>
+    <div class="bg">
+
+
+
+    </div>
+    </body>
+</div>
+</html>
+{% endblock %}
